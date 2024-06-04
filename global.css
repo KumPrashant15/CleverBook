@@ -28,6 +28,7 @@ section {
     width: 100%;
     /* top: 0; */
     z-index: 1000;
+    height: 100px;
 }
 
 #navbar .container {
@@ -37,8 +38,17 @@ section {
 }
 
 #navbar .logo img {
-    height: 40px;
-    
+    height: 70px;
+    position: relative;
+    bottom: 80px;
+}
+
+#navbar .logo h2{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    color: #42add8;
+    font-family: sans-serif;
 }
 
 #navbar .nav-links {
@@ -46,10 +56,14 @@ section {
     display: flex;
     margin: 0;
     padding: 0;
+    position: relative;
+    bottom: 50px;
+    /* border: 1px solid black; */
 }
 
 #navbar .nav-links li {
     margin-left: 20px;
+    
 }
 
 #navbar .nav-links a {
@@ -78,7 +92,7 @@ section {
     padding: 100px 0;
     /* margin-top: 40px; */
     /* border: 1px solid black; */
-    height: 72vh;
+    height: 78.5vh;
     position: relative;
 }
 
@@ -99,11 +113,12 @@ section {
 }
 
 #hero img{
-    height: 500px;
-    width: 400px;
+    height: 550px;
+    width: 450px;
     position: absolute;
     right: 10px;
-    top: 20px;
+    top: 1px;
+    /* margin-right: 20px; */
 }
 
 #problems ul {
@@ -190,7 +205,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #navbar .nav-links {
         display: none;
         flex-direction: column;
@@ -219,4 +234,4 @@ footer {
     #navbar .logo img {
         height: 30px;
     }
-}
+} */

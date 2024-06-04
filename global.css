@@ -21,7 +21,7 @@ section {
 }
 
 #navbar {
-    background: #333;
+    background: #151218;
     color: #fff;
     padding: 10px 0;
     position: sticky;
@@ -73,19 +73,37 @@ section {
 }
 
 #hero {
-    background: #f4f4f4;
+    background: #f2ebf3;
     text-align: center;
     padding: 100px 0;
-    margin-top: 50px;
+    /* margin-top: 40px; */
+    /* border: 1px solid black; */
+    height: 72vh;
+    position: relative;
 }
 
 #hero h1 {
     font-size: 2.5em;
+    /* margin-left: 20px; */
+    /* border: 1px solid black; */
+    width: 600px;
+    position: absolute;
+    color: #42add8;
+
 }
 
 #hero p {
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+#hero img{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
 
 #problems ul {

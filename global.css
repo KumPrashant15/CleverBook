@@ -28,7 +28,7 @@ section {
     width: 100%;
     /* top: 0; */
     z-index: 1000;
-    height: 100px;
+    height: 15vh;
 }
 
 #navbar .container {
@@ -93,8 +93,9 @@ section {
     padding: 100px 0;
     /* margin-top: 40px; */
     /* border: 1px solid black; */
-    height: 78.5vh;
+    height: 85vh;
     position: relative;
+    border-radius: 0 0 15% 150px;
 }
 
 #hero h1 {
@@ -105,7 +106,16 @@ section {
     position: absolute;
     color: #42add8;
     font-family: cursive;
+    /* right: 37%; */
+}
 
+#hero .glow{
+    font-size: 3em;
+    width: 600px;
+    position: absolute;
+    color: #42add8;
+    font-family: cursive;
+    right: 31%;
 }
 
 #hero p {
@@ -114,6 +124,15 @@ section {
     position: absolute;
     color: #24cd98;
     font-family: cursive;
+}
+
+#hero .para{
+    font-size: 1.2em;
+    width: 500px;
+    position: absolute;
+    margin-top: 120px;
+    left: 200px;
+    color: black;
 }
 
 #hero img{
@@ -125,16 +144,26 @@ section {
     /* margin-right: 20px; */
 }
 
-#problems ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Key Problems */
+
+#problems h2{
     text-align: center;
+    font-family:sans-serif;
+    font-size: 44px;
+    line-height: 56px;
 }
 
-#problems li {
-    font-size: 1.2em;
-    margin: 10px 0;
+#problems{
+display: flex;
+border: 1px solid black;
+align-items: center;
+justify-content: center;
+}
+
+#problems .one{
+    border: 1px solid black;
+text-align: center;
+
 }
 
 #metrics .metrics-icons {

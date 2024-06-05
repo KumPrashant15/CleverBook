@@ -336,7 +336,7 @@ section {
     #reviews {
     padding: 40px 20px;
     background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
-
+ border-radius: 0 0 13% 13%;
 }
 
 #reviews h2 {

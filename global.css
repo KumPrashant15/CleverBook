@@ -9,12 +9,11 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* .container {
+.container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
-} */
+}   
 
 section {
     padding: 60px 0;
@@ -42,15 +41,6 @@ section {
     position: relative;
     bottom: 60px;
 }
-
-/* .logo h2{
-    position: relative;
-    left: 100px;
-    bottom: 30px;
-    color: #24cd98;
-    font-family: sans-serif;
-    text-decoration: none;
-} */
 
 #navbar .nav-links {
     list-style: none;
@@ -87,97 +77,204 @@ section {
     border-radius: 2px;
 }
 
+@media (max-width: 768px) {
+    #navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    #navbar .menu-toggle {
+        display: flex;
+    }
+
+    #navbar .nav-links.show {
+        display: flex;
+    }
+
+    #navbar .logo img {
+        max-height: 50px;
+    }
+}
+
+/* Hero section------------------> */
+
 #hero {
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     text-align: center;
     padding: 100px 0;
-    /* margin-top: 40px; */
-    /* border: 1px solid black; */
     height: 85vh;
     position: relative;
     border-radius: 0 0 15% 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #42add8;
+    font-family: cursive;
 }
 
 #hero h1 {
-    font-size: 3em;
-    /* margin-left: 20px; */
-    /* border: 1px solid black; */
-    width: 600px;
-    position: absolute;
+    font-size: 2em;
+    margin: 0;
     color: #42add8;
-    font-family: cursive;
-    right: 50%;
 }
-
 
 #hero p {
     font-size: 1.8em;
-    margin-top: 60px;
-    position: absolute;
+    margin-top: 20px;
     color: #24cd98;
-    font-family: cursive;
-    right: 53%;
 }
 
-#hero .para{
-    font-size: 1.2em;
-    width: 500px;
-    position: absolute;
-    margin-top: 120px;
-    left: 200px;
+#hero .para {
+    font-size: 1em;
+    margin-top: 20px;
     color: black;
+    max-width: 600px;
+    text-align: center;
 }
 
-#hero img{
-    height: 550px;
-    width: 450px;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    /* margin-right: 20px; */
+#hero img {
+    height: 300px;
+    width: auto;
+    margin-top: 20px;
 }
 
+@media (min-width: 769px) {
+    #hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 60px 20px;
+    }
+
+    #hero h1, #hero p, #hero .para {
+        text-align: left;
+    }
+
+    #hero h1 {
+        font-size: 2.8em;
+        width: 600px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+
+    #hero p {
+        font-size: 2em;
+        margin-top: 0;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+    }
+
+    #hero .para {
+        font-size: 1.2em;
+        margin-top: 0;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        max-width: 500px;
+    }
+
+    #hero img {
+        height: 450px;
+        width: auto;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        padding: 30px 0;
+        height: auto;
+        border-radius: 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+        width: 90%;
+        position: static;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+        margin-top: 10px;
+        position: static;
+    }
+
+    #hero .para {
+        font-size: 1em;
+        margin-top: 15px;
+        position: static;
+        max-width: 90%;
+    }
+
+    #hero img {
+        height: 200px;
+        width: auto;
+        margin-top: 20px;
+        position: static;
+    }
+}
 /* Key Problems ----------------------------->*/
 
-#problems h2{
+#problems {
+    padding: 20px; /* Add padding to the problems section */
+}
+
+#problems h2 {
     text-align: center;
-    font-family:sans-serif;
-    font-size: 44px;
+    font-family: sans-serif;
+    font-size: 40px;
     line-height: 56px;
-    width: 100%;
 }
 
-#problems .container{
-display: flex;
-/* border: 1px solid black; */
-align-items: center;
-justify-content: space-evenly;
-width: 100%;
+#problems .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Distribute items evenly */
 }
 
-#problems .one{
-/* border: 1px solid black; */
-text-align: center;
-height: 320px;
-width: 100%;
-border-radius: 20px;
-margin: 0 20px 0 20px;
-background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-font-size: 25px;
-font-family: sans-serif;
-/* line-height: 40px; */
-/* padding-left: 8px; */
+
+#problems .container > .container {
+    flex-basis: 48%; /* Set flex-basis for inner containers */
+    margin-bottom: 5px; /* Add margin between inner containers */
 }
 
-.one p{
+#problems .one {
+    text-align: center;
+    height: auto; /* Set height to auto */
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 20px; /* Add padding */
+}
+
+.one p {
     font-size: 16px;
     font-family: sans-serif;
-    text-align: left;
     line-height: 25px;
     margin-top: 20px;
-    padding: 0 20px 0 15px ;
-    text-align: center;
 }
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    #problems .container > .container {
+        flex-basis: 100%; /* Set full width for inner containers on smaller screens */
+    }
+}
+
+
 
 /* Key matrics system-----------------------> */
 .counter-up{
@@ -236,12 +333,97 @@ font-family: sans-serif;
                     }
                     }
 
-        /* -----------------------------> */
-        #reviews .review {
-    margin: 20px 0;
-    text-align: center;
+        /* review -----------------------------> */
+    #reviews {
+    padding: 40px 20px;
+    background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+
 }
 
+#reviews h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    opacity: 0; /* Initial state for animation */
+    transform: scale(0.95); /* Initial scale */
+    animation: fadeInOutZoom 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInOutZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.95); /* Slightly smaller */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.05); /* Slightly larger */
+    }
+}   
+
+
+#reviews .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#reviews .review {
+    flex-basis: calc(48% - 20px);
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;;
+}
+
+#reviews .review:hover {
+    animation: glowZoom 1s infinite alternate, zoomIn 2s ease; /* Apply glow and zoom animations on hover */
+}
+
+
+@keyframes glowZoom {
+    0% {
+        box-shadow: 0 0 5px rgba(206, 223, 14, 0.8); /* Initial glow effect */
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(244, 140, 13, 0.8); /* Enhanced glow effect */
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Zoom in effect */
+    }
+}
+
+#reviews .review p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#reviews .review footer {
+    text-align: right;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    #reviews .review {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Problem target section------------------> */
 #features .tabs {
     display: flex;
     justify-content: space-around;

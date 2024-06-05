@@ -2,12 +2,6 @@ document.addEventListener("DOMContentLoaded"),
   () => {
     const menuToggle = document.getElementById("mobile-menu");
     const navLinks = document.querySelector(".nav-links");
-    // $(document).ready(function () {
-    //   $(".counter").counterUp({
-    //     delay: 10,
-    //     time: 1200,
-    //   });
-    // });
     
     menuToggle.addEventListener("click", () => {
       navLinks.classList.toggle("show");

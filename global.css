@@ -38,8 +38,8 @@ section {
 
 #navbar .logo img {
     height: 80px;
-    position: relative;
     bottom: 60px;
+    margin-top: -55px;
 }
 
 #navbar .nav-links {
@@ -47,8 +47,9 @@ section {
     display: flex;
     margin: 0;
     padding: 0;
-    position: relative;
     bottom: 50px;
+    margin-top: -55px;
+    /* position: relative; */
     /* border: 1px solid black; */
 }
 
@@ -78,6 +79,11 @@ section {
 }
 
 @media (max-width: 768px) {
+    #navbar .container{
+        display: flex;
+        align-items: center;
+
+    }
     #navbar .nav-links {
         display: none;
         flex-direction: column;
@@ -91,6 +97,8 @@ section {
 
     #navbar .menu-toggle {
         display: flex;
+        /* border: solid red; */
+        margin-top: -45px;
     }
 
     #navbar .nav-links.show {
@@ -98,9 +106,63 @@ section {
     }
 
     #navbar .logo img {
-        max-height: 50px;
-    }
+        max-height: 70px;
+    }~
 }
+
+.menu{
+    width: 170px;
+    height: 250px;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center  ;
+    position: absolute;
+    top: 15vh;
+    right: 5%;
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    border-radius: 7%;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+.menu-visible{
+    width: 170px;
+    height: 250px;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center  ;
+    position: absolute;
+    top: 15vh;
+    right: 5%;
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    border-radius: 7%;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.menu .menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 /* Hero section------------------> */
 

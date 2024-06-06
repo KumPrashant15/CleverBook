@@ -333,7 +333,10 @@ section {
 /* Key Problems ----------------------------->*/
 
 #problems {
-    padding: 20px; /* Add padding to the problems section */
+    padding: 20px; 
+    background-image: url(/assets/background.png) ;
+    background-size:contain ;
+    background-repeat: no-repeat;
 }
 
 #problems h2 {
@@ -342,25 +345,23 @@ section {
     font-size: 50px;
     line-height: 56px;
     margin-top: 60px;
-    /* color: #24cd98; */
     padding-left: 12%;
-    /* background-color: #24cd98; */
 }
 
 #problems .container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-between; /* Distribute items evenly */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 
 #problems .container > .container {
-    flex-basis: 45%; /* Set flex-basis for inner containers */
+    flex-basis: 45%;
 }
 
 #problems .one {
     text-align: center;
-    height: auto; /* Set height to auto */
+    height: auto;
     border-radius: 20px;
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     font-size: 25px;
@@ -404,7 +405,6 @@ section {
 
     .content .box{
         width: calc(25% 30px);
-        /* border: 1px dashed #fff; */
         border-radius: 5px;
         padding: 20px;
         display: flex;
@@ -455,8 +455,8 @@ section {
     font-family: sans-serif;
     font-size: 36px;
     margin-bottom: 20px;
-    opacity: 0.5    ; /* Initial state for animation */
-    transform: scale(0.95); /* Initial scale */
+    opacity: 0.5    ; 
+    transform: scale(0.95); 
     animation: fadeInOutZoom 3s ease-in-out infinite alternate;
     margin-top: 50px;
 }
@@ -464,11 +464,11 @@ section {
 @keyframes fadeInOutZoom {
     0% {
         opacity: 0.5;
-        transform: scale(0.95); /* Slightly smaller */
+        transform: scale(0.95); 
     }
     100% {
         opacity: 1;
-        transform: scale(1.05); /* Slightly larger */
+        transform: scale(1.05); 
     }
 }   
 
@@ -491,25 +491,25 @@ section {
 }
 
 #reviews .review:hover {
-    animation: glowZoom 1s infinite alternate, zoomIn 2s ease; /* Apply glow and zoom animations on hover */
+    animation: glowZoom 1s infinite alternate, zoomIn 2s ease; 
 }
 
 
 @keyframes glowZoom {
     0% {
-        box-shadow: 0 0 5px rgba(206, 223, 14, 0.8); /* Initial glow effect */
+        box-shadow: 0 0 5px rgba(206, 223, 14, 0.8); 
     }
     100% {
-        box-shadow: 0 0 20px rgba(244, 140, 13, 0.8); /* Enhanced glow effect */
+        box-shadow: 0 0 20px rgba(244, 140, 13, 0.8); 
     }
 }
 
 @keyframes zoomIn {
     0% {
-        transform: scale(1); /* Initial scale */
+        transform: scale(1); 
     }
     100% {
-        transform: scale(1.1); /* Zoom in effect */
+        transform: scale(1.1); 
     }
 }
 

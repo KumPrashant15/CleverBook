@@ -337,7 +337,7 @@ section {
 
 #problems {
     padding: 20px; 
-    background-image: url(/assets/background.png) ;
+    background-image: url(./assets/background.png) ;
     background-size:contain ;
     background-repeat: no-repeat;
 }
